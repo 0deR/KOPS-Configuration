@@ -1,8 +1,6 @@
 kops create cluster \
-    --cloud aws \
+    --cloud=aws \
     --node-count=1 \
-    --node-size t2.micro \
-    --master-size t2.micro \
-    --zones us-west-2a,us-west-2b,us-west-2c \
-    --master-zones us-west-2a,us-west-2b,us-west-2c \
-    --topology private \
+    --node-size=t2.micro \
+    --master-size=t2.micro \
+    --zones=us-east-2a,us-east-2b,us-east-2c \
