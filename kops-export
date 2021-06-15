@@ -1,0 +1,5 @@
+export KOPS_STATE_STORE=s3://ibrahimsite.xyz
+export CLUSTER_NAME=ibrahimsite.xyz
+export VPC_ID=vpc-12345678 # replace with your VPC id
+export NETWORK_CIDR=10.100.0.0/16 # replace with the cidr for the VPC ${VPC_ID}
+kops create cluster --zones=us-east-1b --name=${CLUSTER_NAME} --vpc=${VPC_ID}
