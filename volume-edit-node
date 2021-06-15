@@ -1,0 +1,10 @@
+metadata:
+  name: nodes-us-east-1c
+spec:
+  machineType: t2.micro
+  maxSize: 2  
+  minSize: 2
+  role: Node
+  rootVolumeSize: 200
+  rootVolumeType: io1
+  rootVolumeIops: 200
